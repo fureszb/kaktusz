@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+header, aside, article, footer{
+    border: 3px solid #0788ca;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: #0abffd
+}
+header{
+    color: white;
+    padding: 10px;
+    grid-area: h;
+}
+header h1{
+    text-align: center;
+    font-size: 40px;
+}
+nav{
+    background-color: #0788ca;
+    border: 2px solid #0788ca;
+    border-radius: 8px;
+    margin: 5px;
+    grid-area: n;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 130px);
+    text-align: center;
+    padding: 0;
+}
+nav li a:hover{
+    background-color: #0abffd;
+    border-radius: 6px;
+    padding: 10px;
+    color: #f4df85;
+}
+nav li {
+    list-style: none;
+    padding: 10px;
+}
+#aktiv{
+    background-color: #0abffd;
+    border-radius: 6px;
+    padding: 10px;
+    padding-left: 0;
+}
+#aktiv a{
+    color: #f4df85;
+}
+nav a{
+    color: #ffd700;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+aside{
+    text-align: center;
+    grid-area: as;
+}
+article{
+    color: black;
+    grid-area: a;
+}
+article ol{
+    padding: 15px;
+    padding-left: 40px;
+}
+aside img{
+    padding: 1px;
+    border-radius: 10px;
+    width: 100%;
+}
+footer{
+    grid-area: f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.page2{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: white;
+    border: 0;
+}
+main{
+    display: grid;
+    grid-template-areas: "h h"
+    "n n"
+    "as a"
+    "f f";
+}
+.masodik_main{
+    display: grid;
+    grid-template-areas: "h h"
+    "n n"
+    "a a"
+    "f f";
+}
+.page2 img{
+    width: 100%;
+    border: 2px solid #0788ca;
+    border-radius: 8px;
+}
+.page2 div{
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    nav ul{
+        grid-template-columns: repeat(1, auto);
+    }
+    nav li{
+        margin: 5px;
+        text-align: start;
+    }
+    main{
+        display: grid;
+        grid-template-areas: "h h"
+        "n n"
+        "a a"
+        "as as"
+        "f f";
+    }
+    .masodik_main{
+        display: grid;
+        grid-template-areas: "h h"
+        "n n"
+        "a a"
+        "f f";
+    }
+    
+    
+}
