@@ -132,6 +132,9 @@ main{
         "a a"
         "f f";
     }
+    .page2{
+        grid-template-columns: repeat(2, auto);
     
+    }
     
 }
